@@ -1,6 +1,6 @@
 
 import { ArrowDown, Code, Camera } from "lucide-react";
-import profile from "../assets/kiamy-profile.jpeg";
+import profile from "../assets/kiamy-profile-optimized.webp";
 
 export default function Home() {
   return (
