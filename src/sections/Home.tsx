@@ -61,7 +61,13 @@ export default function Home() {
 
       <div className="hero-image-wrapper">
         <div className="hero-image-frame">
-          <img src={profile} alt="Kiamy Neto" />
+          <img
+  src={profile}
+  alt="Kiamy Neto"
+  width={1536}
+  height={2048}
+  fetchPriority="high"
+/>
         </div>
 
         <span className="hero-image-caption">
