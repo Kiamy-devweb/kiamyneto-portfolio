@@ -1,6 +1,6 @@
 
 import { ArrowDown, Code, Camera } from "lucide-react";
-import profile from "../assets/kiamy-profile-optimized.webp";
+
 
 export default function Home() {
   return (
@@ -62,13 +62,13 @@ export default function Home() {
       <div className="hero-image-wrapper">
         <div className="hero-image-frame">
           <img
-            src={profile}
-            alt="Kiamy Neto"
-            width={1536}
-            height={2048}
-            fetchPriority="high"
-            decoding="async"
-          />
+          src="/kiamy-profile.webp"
+          alt="Kiamy Neto"
+          width={1536}
+          height={2048}
+          fetchPriority="high"
+          decoding="async"
+        />
         </div>
 
         <span className="hero-image-caption">
