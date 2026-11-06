@@ -13,7 +13,10 @@ export default function Navbar() {
         KN<span>.</span>
       </a>
 
-      <nav className={`navbar-links ${menuOpen ? "is-open" : ""}`}>
+      <nav
+          id="mobile-navigation"
+          className={`navbar-links ${menuOpen ? "is-open" : ""}`}
+        >
         <a href="#home" onClick={closeMenu}>Home</a>
         <a href="#about" onClick={closeMenu}>About</a>
         <a href="#skills" onClick={closeMenu}>Skills</a>

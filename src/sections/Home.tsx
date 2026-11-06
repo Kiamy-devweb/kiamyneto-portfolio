@@ -62,7 +62,7 @@ export default function Home() {
       <div className="hero-image-wrapper">
         <div className="hero-image-frame">
           <img
-          src="/kiamy-profile.webp"
+          src="/kiamy-profile-small.webp"
           alt="Kiamy Neto"
           width={1536}
           height={2048}
