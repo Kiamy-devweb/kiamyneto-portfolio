@@ -1315,3 +1315,344 @@ button {
   object-position: center 35%;
 }
 }
+
+/* ==========================================
+   NETOSTORE — FULL PROJECT PAGE
+========================================== */
+
+.netostore-page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.project-details[href] {
+  transition: opacity 0.2s ease;
+}
+
+.project-details[href]:hover {
+  opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .netostore-page *,
+  .netostore-page *::before,
+  .netostore-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* NETOSTORE LAYOUT */
+
+.netostore-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 44px 38px 90px;
+}
+
+.netostore-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 95px;
+  text-decoration: none;
+}
+
+.netostore-back:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+
+.netostore-hero {
+  max-width: 900px;
+  margin-bottom: 110px;
+}
+
+.netostore-hero h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(56px, 9vw, 116px);
+  letter-spacing: -0.075em;
+  line-height: 1.08;
+  margin: 22px 0 28px;
+}
+
+.netostore-hero h1 span {
+  color: var(--accent);
+}
+
+.netostore-hero p {
+  color: var(--muted);
+  font-size: clamp(17px, 2.1vw, 23px);
+  line-height: 1.65;
+}
+
+.netostore-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.netostore-tags span {
+  padding: 9px 15px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* OVERVIEW */
+
+.netostore-intro {
+  border-top: 1px solid var(--border);
+  padding: 75px 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+}
+
+.netostore-intro h2,
+.netostore-video-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  margin-top: 20px;
+}
+
+.netostore-intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.netostore-intro p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* HIGHLIGHTS */
+
+.netostore-features {
+  border-top: 1px solid var(--border);
+  padding: 75px 0 100px;
+}
+
+.netostore-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.netostore-feature-grid article,
+.netostore-detail-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.netostore-feature-grid article:hover,
+.netostore-detail-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.netostore-feature-grid svg,
+.netostore-detail-card svg {
+  color: var(--accent);
+  margin-bottom: 25px;
+}
+
+.netostore-feature-grid h3,
+.netostore-detail-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.netostore-feature-grid p,
+.netostore-detail-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* REPORT SECTIONS */
+
+.netostore-report-section {
+  border-top: 1px solid var(--border);
+  padding: 85px 0 95px;
+}
+
+.netostore-report-section h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(32px, 4.5vw, 54px);
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  margin: 22px 0 30px;
+}
+
+.netostore-report-section > p {
+  max-width: 880px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+/* DETAIL CARDS */
+
+.netostore-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 38px 0 30px;
+}
+
+/* OBJECTIVES & SKILLS */
+
+.netostore-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 38px;
+}
+
+.netostore-check-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.netostore-check-list svg {
+  flex-shrink: 0;
+  color: var(--accent);
+  margin-top: 3px;
+}
+
+/* VIDEO */
+
+.netostore-video-section {
+  border-top: 1px solid var(--border);
+  padding: 85px 0 100px;
+}
+
+.netostore-video-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+
+.netostore-video-heading p {
+  max-width: 310px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.netostore-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.netostore-video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #08080b;
+}
+
+/* FOOTER */
+
+.netostore-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border-top: 1px solid var(--border);
+  margin-top: 30px;
+  padding-top: 32px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.netostore-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.netostore-bottom a:hover {
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .netostore-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .netostore-wrap {
+    padding: 28px 22px 65px;
+  }
+
+  .netostore-back {
+    margin-bottom: 70px;
+  }
+
+  .netostore-hero {
+    margin-bottom: 75px;
+  }
+
+  .netostore-intro {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .netostore-video-heading {
+    display: block;
+  }
+
+  .netostore-video-heading p {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .netostore-feature-grid,
+  .netostore-detail-grid,
+  .netostore-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .netostore-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

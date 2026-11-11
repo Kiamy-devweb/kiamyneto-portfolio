@@ -2,7 +2,6 @@
 import { useState } from "react";
 import {
   Code2,
-  ExternalLink,
   ArrowUpRight,
   FolderCode,
 } from "lucide-react";
@@ -38,17 +37,17 @@ const projects = [
     featured: false,
   },
   {
-    id: 3,
-    title: "NetoStore",
-    category: "E-commerce",
-    description:
-      "An e-commerce project focused on online shopping, product presentation and a modern user experience.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: "",
-    github: "",
-    demo: "",
-    featured: false,
-  },
+  id: 3,
+  title: "NetoStore",
+  category: "Full Stack Development",
+  description:
+    "A full-stack e-commerce platform developed with PHP and MySQL, featuring customer accounts, shopping cart, simulated checkout, order history, and a complete administration dashboard.",
+  technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+  image: "",
+  github: "",
+  demo: "",
+  featured: false,
+},
 ];
 
 
@@ -161,21 +160,23 @@ export default function Projects() {
                     </a>
                   )}
 
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`Live demo ${project.title}`}
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  )}
+                  {project.id === 3 ? (
+                  <a
+                    className="project-details"
+                    href="/projects/netostore"
+                    aria-label="Explore NetoStore project"
+                  >
+                    Explore project
+                    <ArrowUpRight size={16} />
+                  </a>
+                  
+                  ) : (
 
-                  <span className="project-details">
+                    <span className="project-details">
                     Explore project
                     <ArrowUpRight size={16} />
                   </span>
+                  )}
                 </div>
               </div>
             </article>
